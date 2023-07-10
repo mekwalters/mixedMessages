@@ -19,21 +19,19 @@ const randomizer = (actor, question, answer) => {
   //console.log(b)
   randomQuestion = questions[b];
   //console.log(randomQuestion);
-  console.log(answer);
+  //console.log(answer);
   let c = Math.floor(Math.random()*answers.length);
-  console.log(c)
+  //console.log(c)
   randomAnswer = answers[c];
-  console.log(randomAnswer);
+  //console.log(randomAnswer);
  // console.log(answer)
-  //return actor;
-  //return question;
-  //return answer;
-  }
+ console.log('Results in function: ' + randomActor + randomQuestion + randomAnswer);
+ }
 
 //test function call
-(randomizer(actors, questions, answers));
+console.log(randomizer(actors, questions, answers));
 
 //output statements
-//console.log ('3 ${randomActor} walk into a bar'); //needs actors array
-//console.log ('The bartender asks _________'); // needs questions array
-//console.log ('They say ____________, of course.') // needs answers array
+console.log (`3 ${randomActor} walk into a bar`); //needs actors array
+console.log (`The bartender asks ${randomQuestion}`); // needs questions array
+console.log (`They say ${randomAnswer}, of course.`) // needs answers array
