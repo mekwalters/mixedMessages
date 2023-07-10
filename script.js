@@ -5,29 +5,20 @@ const questions = ['what would you like', 'who are you', 'where are you from', '
 
 const answers = ['water', 'milk', 'beer', 'whiskey', 'world domination', 'sushi', 'boba', 'its hotter than Hades', 'the Vatican', 'Hoth', 'Hogwarts', 'Darth Vader', 'respect', 'a pond', 'a bone', 'brains', 'flying carpets', 'lightsabers', 'world peace']
 
+
 let randomActor;
 let randomQuestion;
 let randomAnswer;
 
 //functions to randomize
 const randomizer = (actor, question, answer) => {
-  let a =  Math.floor(Math.random()*actors.length);
+  let a = Math.floor(Math.random() * actors.length);
   randomActor = actors[a];
-  //console.log(randomActor);
-  //console.log(question)
-  let b = Math.floor(Math.random()*questions.length);
-  //console.log(b)
+  let b = Math.floor(Math.random() * questions.length);
   randomQuestion = questions[b];
-  //console.log(randomQuestion);
-  //console.log(answer);
-  let c = Math.floor(Math.random()*answers.length);
-  //console.log(c)
+  let c = Math.floor(Math.random() * answers.length);
   randomAnswer = answers[c];
-  //console.log(randomAnswer);
- // console.log(answer)
- //console.log('Results in function: ' + randomActor + randomQuestion + randomAnswer);
- //return console.log('test');
- }
+}
 
 //test function call
 randomizer(actors, questions, answers);
