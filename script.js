@@ -9,6 +9,7 @@ const answers = ['water', 'milk', 'beer', 'whiskey', 'world domination', 'sushi'
 let randomActor;
 let randomQuestion;
 let randomAnswer;
+let randomNumber;
 
 //functions to randomize
 const randomizer = (actor, question, answer) => {
@@ -18,12 +19,13 @@ const randomizer = (actor, question, answer) => {
   randomQuestion = questions[b];
   let c = Math.floor(Math.random() * answers.length);
   randomAnswer = answers[c];
+  randomNumber = Math.floor(Math.random()*101);
 }
 
 //test function call
 randomizer(actors, questions, answers);
 
 //output statements
-console.log (`3 ${randomActor} walk into a bar`); //needs actors array
+console.log (`${randomNumber}  ${randomActor} walk into a bar`); //needs actors array
 console.log (`The bartender asks ${randomQuestion}`); // needs questions array
 console.log (`They say ${randomAnswer}, of course.`) // needs answers array
