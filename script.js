@@ -25,11 +25,12 @@ const randomizer = (actor, question, answer) => {
   randomAnswer = answers[c];
   //console.log(randomAnswer);
  // console.log(answer)
- console.log('Results in function: ' + randomActor + randomQuestion + randomAnswer);
+ //console.log('Results in function: ' + randomActor + randomQuestion + randomAnswer);
+ //return console.log('test');
  }
 
 //test function call
-console.log(randomizer(actors, questions, answers));
+randomizer(actors, questions, answers);
 
 //output statements
 console.log (`3 ${randomActor} walk into a bar`); //needs actors array
